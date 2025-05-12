@@ -350,7 +350,7 @@ class MainActivity : AppCompatActivity() {
 
         btnMOD.setOnClickListener {
            tempMOD10 = display.text.toString().toDouble()
-            display.text == "0"
+            display.text = "0"
             operadorMOD = true
 
         }
@@ -448,6 +448,7 @@ class MainActivity : AppCompatActivity() {
                 else if (tempo == ""){
                     historico.setText(display.text.toString() + "/")
                 }
+                isResult = true
             }
 
             else if (historico.text.toString().endsWith("/")){
@@ -488,7 +489,6 @@ class MainActivity : AppCompatActivity() {
                 isResult = true
 
             }
-
             else{
                 historico.setText(historico.text.toString() + "+" + display.text.toString())
                 var exp = ExpressionBuilder(historico.text.toString()).build()
@@ -497,9 +497,61 @@ class MainActivity : AppCompatActivity() {
                 isResult = true
                 historico.setText("")
 
+
             }
         }
 
+        btnParentesB.setOnClickListener {
+
+            historico.setText(historico.text.toString() + "(")
+            isResult = true
+
+        }
+
+        btnParentesF.setOnClickListener {
+
+            historico.setText(historico.text.toString() + ")")
+            isResult = true
+
+        }
+
+
+        // Botão RESULTADO
+
+        btnIgual.setOnClickListener {
+            if (operadorMOD ==true){
+                tempMOD02 = display.text.toString().toDouble()
+                var calc = tempMOD10 % tempMOD02
+
+                display.text = calc.toString()
+                tempMOD10 = 0.0
+                tempMOD02 = 0.0
+                operadorMOD = false
+                isResult = true
+
+            }
+
+            else{
+                historico.setText(historico.text.toString() + "+" + display.text.toString())
+                var expressao = ExpressionBuilder(historico.text.toString()).build()
+                var conta = expressao.evaluate()
+                display.setText(conta.toString())
+                isResult = true
+                historico.setText("")
+
+            }
+        }
+        btnDegRad.setOnClickListener {
+            if (btnDegRad.text == "DEG")
+                btnDegRad.text = "RAD"
+            else if (btnDegRad.text == "RAD")
+                btnDegRad.text = "DEG"
+        }
+
+        btnXy.setOnClickListener {
+
+        }
     }
+
 
 }

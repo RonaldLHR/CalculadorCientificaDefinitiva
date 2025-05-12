@@ -2,4 +2,29 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Fundo da calculadora -->
+    <color name="background_dark">#FF1E1E1E</color>
+
+    <!-- Cor das teclas padrão -->
+    <color name="button_default">#FF2C2C2C</color>
+    <color name="button_default_text">#FFFFFFFF</color>
+
+    <!-- Cor das teclas de função científica (sin, cos, log etc.) -->
+    <color name="button_function">#FF424242</color>
+    <color name="button_function_text">#FF76FF03</color> <!-- Verde-limão -->
+
+    <!-- Tecla AC / C (limpar) -->
+    <color name="button_clear">#FFB00020</color>
+    <color name="button_clear_text">#FFFFFFFF</color>
+
+    <!-- Operadores (+, −, ×, ÷, = etc.) -->
+    <color name="button_operator">#FF2962FF</color> <!-- Azul vibrante -->
+    <color name="button_operator_text">#FFFFFFFF</color>
+
+    <!-- Visor -->
+    <color name="display_background">#FF121212</color>
+    <color name="display_text">#FFFFFFFF</color>
+
+
 </resources>
