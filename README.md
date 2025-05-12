@@ -2,13 +2,17 @@
 
 Aplicativo Android que simula uma calculadora científica moderna, funcional e responsiva. Desenvolvido com foco na experiência do usuário, precisão nos cálculos e uma interface amigável.
 
+## 🎥 Demonstração
+
+👉 [Clique aqui para ver a apresentação da calculadora no YouTube](https://youtu.be/RV-KI6ykUTs)
+
 ## 🚀 Funcionalidades
 
 - ✖️➕➖➗ Operações básicas: adição, subtração, multiplicação e divisão  
 - 📐 Funções científicas: seno, cosseno, tangente, logaritmo, raiz quadrada, potência  
 - 🧮 Histórico de cálculos realizados  
 - 🌙 Modo escuro para conforto visual  
-- 🎯 Interface intuitiva e adaptável a diferentes tamanhos de tela
+- 🎯 Interface intuitiva e adaptável a diferentes tamanhos de tela  
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -30,7 +34,3 @@ Aplicativo Android que simula uma calculadora científica moderna, funcional e r
 1. Clone o repositório:
    ```bash
    git clone https://github.com/RonaldLHR/CalculadorCientificaDefinitiva.git
-👨‍💻 Autor
-Desenvolvido por Ronald Xavier Queiroz
-📧 ronaldx563@gmail.com
-🔗 GitHub
